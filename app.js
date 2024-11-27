@@ -313,8 +313,8 @@ var mobileCompanies = {
           os: "XOS 10.6, Android 12",
           connectivity: "4G LTE"
         },
-        InfinixZero20: {
-          model: "Infinix Zero 20",
+        InfinixZeroX: {
+          model: "Infinix Zero X",
           image: "https://www.infinixmobiles.com/assets/images/zero-20.jpg",
           chip: "MediaTek Helio G96",
           mainCamera: "108MP Triple camera",
@@ -534,4 +534,95 @@ var mydate= new Date().toUTCString()
 
  }
 }
+}
+
+
+
+
+
+
+
+
+var newvalue
+function divcall(){
+  newvalue=event.target.innerText
+  for(brand in mobileCompanies){
+    for(keys in mobileCompanies[brand]){
+      if(newvalue===mobileCompanies[brand][keys].model){
+        maindiv1.innerHTML=`<div class="h-100 card-div w-100 d-flex d-flex flex-column align-items-center justify-content-center" 
+        style="margin: 15% 0 !important">
+          <div class="h-100 w-100 d-flex flex-column flex-md-row gap-4 gap-md-0 justify-content-around align-items-center">
+            <img class="image-fluid" src="${mobileCompanies[brand][keys].image}" alt="">
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+              <h1>${mobileCompanies[brand][keys].model}</h1>
+              <div class="ms-2">
+               <h5>FEATURES</h5>
+                <p>${mobileCompanies[brand][keys].chip}</p>
+                <p>${mobileCompanies[brand][keys].mainCamera}</p>
+                <p>${mobileCompanies[brand][keys].display}</p>
+                <p>${mobileCompanies[brand][keys].ram}</p>
+                <p>${mobileCompanies[brand][keys].battery}</p>
+                <p>${mobileCompanies[brand][keys].protection}</p>
+                <p>${mobileCompanies[brand][keys].security}</p>
+                <p>${mobileCompanies[brand][keys].os}</p>
+                <p>${mobileCompanies[brand][keys].connectivity}</p>
+              </div>
+              <div>
+              <a class="btn btn-success" href="index.html">Back to main</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    `
+    
+          
+          
+        
+      }
+    }
+  
+}
+}
+
+var imagetext
+function imagetodiv(){
+  imagetext=event.target.nextElementSibling.innerText
+  console.log(imagetext)
+  for(brand in mobileCompanies){
+    for(keys in mobileCompanies[brand]){
+      if(imagetext===mobileCompanies[brand][keys].model){
+        maindiv1.innerHTML=`<div class="h-100 card-div w-100 d-flex d-flex flex-column align-items-center justify-content-center" 
+        style="margin: 15% 0 !important">
+          <div class="h-100 w-100 d-flex flex-column flex-md-row gap-4 gap-md-0 justify-content-around align-items-center">
+            <img class="image-fluid" src="${mobileCompanies[brand][keys].image}" alt="">
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+              <h1>${mobileCompanies[brand][keys].model}</h1>
+              <div class="ms-2">
+               <h5>FEATURES</h5>
+                <p>${mobileCompanies[brand][keys].chip}</p>
+                <p>${mobileCompanies[brand][keys].mainCamera}</p>
+                <p>${mobileCompanies[brand][keys].display}</p>
+                <p>${mobileCompanies[brand][keys].ram}</p>
+                <p>${mobileCompanies[brand][keys].battery}</p>
+                <p>${mobileCompanies[brand][keys].protection}</p>
+                <p>${mobileCompanies[brand][keys].security}</p>
+                <p>${mobileCompanies[brand][keys].os}</p>
+                <p>${mobileCompanies[brand][keys].connectivity}</p>
+              </div>
+              <div>
+              <a class="btn btn-success" href="index.html">Back to main</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    `
+    
+          
+          
+        
+      }
+    }
+  
+}
+
 }

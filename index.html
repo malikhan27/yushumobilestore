@@ -11,62 +11,225 @@
 </head>
 
 <body>
-  <div class="container-fluid header">
-   
-    <div class="row g-3 g-md-5 py-2 nav">
-      <div class="col-12 col-md-3 d-flex justify-content-center">
-        <div>
-        <img style="width: 300px; height: 80px;" src="1732711767342.jpg" alt="">
+  <header>
+    <div class="container-fluid header">
+
+
+      <div class="row g-3 g-md-5 py-2 nav">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+          <div>
+            <img style="width: 300px; height: 80px;" src="1732711767342.png" alt="">
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-3 mt-1 mt-md-5 d-flex flex-column flex-md-row gap-2 align-items-center justify-content-center">
+          <label class="mt-1" for="brand">BRAND</label>
+          <select class="form-select" onchange="brandchosen()" name="" id="brand">
+            <option disabled selected value="">Select the Brand</option>
+          </select>
+        </div>
+        <div
+          class="col-12 col-md-3 mt-0 mt-md-5 gap-2 d-flex flex-column flex-md-row align-items-center justify-content-center">
+          <label class="mt-1" for="model">MODEL</label>
+          <select class="form-select" onchange="chosenmodel()" name="" id="model">
+            <option disabled selected value="">Select the Model</option>
+          </select>
+        </div>
+        <div
+          class="col-12 col-md-3 d-flex flex-column align-items-center flex-lg-row justify-content-center gap-2 justify-content-md-start">
+          <button class="btn btn-success" onclick="submit()">submit</button>
+          <button class="btn text-nowrap" onclick="submit()"
+            style="background-color: rgb(255, 141, 65); color: white;">Become our member</button>
         </div>
       </div>
-      <div class="col-12 col-md-3 mt-1 mt-md-5 d-flex flex-column flex-md-row gap-2 align-items-center justify-content-center">
-        <label class="mt-1" for="brand">BRAND</label>
-        <select class="form-select" onchange="brandchosen()" name="" id="brand">
-          <option disabled selected value="">Select the Brand</option>
-        </select>
-      </div>
-      <div class="col-12 col-md-3 mt-0 mt-md-5 gap-2 d-flex flex-column flex-md-row align-items-center justify-content-center">
-        <label class="mt-1" for="model">MODEL</label>
-        <select class="form-select" onchange="chosenmodel()" name="" id="model">
-          <option disabled selected value="">Select the Model</option>
-        </select>
-      </div>
-      <div class="col-12 col-md-3 d-flex flex-column align-items-center flex-lg-row justify-content-center gap-2 justify-content-md-start">
-
-        <button class="btn btn-success" onclick="submit()">submit</button>
-        <button class="btn text-nowrap" onclick="submit()" style="background-color: rgb(255, 141, 65); color: white;">Become our member</button>
-
-      </div>
-
     </div>
-  </div>
-  
-  
+
+  </header>
 
 
+<section>
   <div class="mt-3 container">
     <div>
       <div id="main-div">
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="d-flex justify-content-center">
-            <video muted autoplay src="Y_20241127_165323_0001.mp4"></video>
-           </div>
+              <video muted autoplay src="Y_20241127_165323_0001.mp4"></video>
+            </div>
           </div>
           <div class="col-12 col-md-6">
             <div class="d-flex justify-content-center">
-            <video loop muted autoplay style="width: 100%" src="PAKISTAN NO.1_20241127_173253_0001.mp4"></video>
+              <video loop muted autoplay style="width: 100%" src="PAKISTAN NO.1_20241127_173253_0001.mp4"></video>
             </div>
           </div>
+          <div class="text-div py-5 text-center" style="width: 100%;" data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1500">
+            <h1><span>SHOP WITH US TO</span> OCCUPY YOUR POCKET</h1>
+          </div>
+        </div>
+        <div class="row mt-5 py-5 g-3">
+          <div class="col-12 col-md-4" onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;" id="mobile">
+                <img onclick="imagetodiv()" src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Galaxy Z Flip 5</h4>
+                </div>
+              </div>
+            </div>
 
+          </div>
+          <div class="col-12 col-md-4" onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp" onclick="imagetodiv()"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>iPhone 15 Pro</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4" onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp" onclick="imagetodiv()"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Pixel 8 Pro</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-4 " onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp" onclick="imagetodiv()"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>OnePlus 10 Pro</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 " onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp" onclick="imagetodiv()"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Infinix Zero X</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 " onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp" onclick="imagetodiv()"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Realme GT 2 Pro</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 " onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp" onclick="imagetodiv()"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>OnePlus 10 Pro</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 " onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp" onclick="imagetodiv()"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Infinix Zero X</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 " onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="apple-iphone-13-pro-pakistan-priceoye-qvjw4-500x500 (1).webp" onclick="imagetodiv()"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Realme GT 2 Pro</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
+  </div>
+</section>
 
+  <footer>
+  <div class=" container-fluid mt-5">
+      <div class="d-flex justify-content-around align-items-center flex-column flex-md-row flex-wrap w-100 footer">
+        <div class="mb-1">
+          <img class="mb-1 ms-4 ms-md-0" style="width: 200px; height: 70px;" src="1732711767342.png" alt="">
+          <h2>YUSHU MOBILES</h2>
+          <p class="mt-5 text-center"> Copyright &copy; 2024 YA TECHS <br> | All Rights Reserved </p>
+        </div>
+
+        <div class="mt-3 pt-4 text-center">
+          <ul class="me-3">
+            <li class="mb-5">
+              <h4>Product</h4>
+            </li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Reviews</li>
+            <li>Updates</li>
+          </ul>
+        </div>
+
+        <div class="pt-2 text-center">
+
+          <ul class="me-3">
+            <li class="mb-5">
+              <h4>Company</h4>
+            </li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+
+
+
+        <div>
+          <ul class=" me-3 social-ftr">
+            <li class="mb-3 py-4 text-center">
+              <h4>Follow us</h4>
+            </li>
+            <li class="me-3"><span><i class="fa-brands fa-facebook-f"></span></i>Facebook</li>
+            <li class="me-3"><i class="fa-brands fa-instagram button"></i>Instagram</li>
+            <li class="me-3"><i class="fa-brands fa-youtube button"></i>YouTube</li>
+          </ul>
+        </div>
+      </div>
   </div>
 
-
+  </footer>
 
 
 
@@ -80,6 +243,7 @@
   <script src="bundle.js"></script>
   <script src="popper.js"></script>
   <script src="bootstrap.js"></script>
+  <script src="https://kit.fontawesome.com/9ac5fe7ab7.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

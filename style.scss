@@ -1,5 +1,5 @@
 $primarycol: rgb(255, 124, 48);
-$secondarycol: rgb(3, 78, 3);
+$secondarycol: rgb(3, 100, 3);
 
 body,html{
     width: 100%;
@@ -38,6 +38,76 @@ body,html{
     
 }
 
+.text-div{
+    background: rgb(248, 169, 100);
+    background: linear-gradient(62deg, rgb(255, 183, 119) 5%, rgba(1, 136, 1, 0.5) 48%, rgb(253, 188, 131) 99%);;
+    border-radius: 8px;
+    h1{
+        color: $secondarycol !important;
+        text-shadow: 2px 2px 2px black !important
+    }
+    span{
+        color: $primarycol !important;
+    }
+}
+
+.card{
+    border: 1px solid $secondarycol !important;
+    img{
+        cursor: pointer !important;
+    }
+}
+
+.footer{
+  
+    padding: 50px 0;
+    background-color:rgb(164, 252, 164);
+    color: $primarycol;
+    h2{
+        font-family: header-font;
+        font-size: 26px;
+    }
+
+    ul{
+        list-style-type: none;
+        list-style-position: inside;
+        h4{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        li{
+            margin-top: 6px;
+            font-size: 18px;
+             
+            span{
+                margin-right: 15px;
+                background-color: #FFFFFF;
+                color: #555555;
+                border: none;
+                border-radius: 8px;
+                padding: 6px 11px;
+                font-size: medium;
+                margin-bottom: 5px;
+        
+            }
+
+            .button{
+                margin-right: 15px;
+                background-color: #FFFFFF;
+                color: #555555;
+                border: none;
+                border-radius: 8px;
+                padding: 6px 8px;
+                font-size: medium;
+                margin-top: 5px;
+        
+            }
+
+       
+        }
+    }
+}
+
 @media screen and (max-width:500px) {
     .card-div{
         img{
@@ -67,5 +137,6 @@ body,html{
     }
     
 }
+
 
 
