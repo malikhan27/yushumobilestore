@@ -501,8 +501,9 @@ var mobileCompanies = {
  }
 
 var maindiv1 =document.getElementById('main-div')
-
+var footerdiv= document.getElementById('footer-div')
 function submit(){
+window.location.href="#"
 var mydate= new Date().toUTCString()
  for(keys in mobileCompanies[brandselection]){
   if(mobileCompanies[brandselection][keys].model===selectedmodel){
@@ -545,6 +546,7 @@ var mydate= new Date().toUTCString()
 
 var newvalue
 function divcall(){
+  window.location.href="#"
   newvalue=event.target.innerText
   for(brand in mobileCompanies){
     for(keys in mobileCompanies[brand]){
@@ -586,6 +588,7 @@ function divcall(){
 
 var imagetext
 function imagetodiv(){
+  window.location.href="#"
   imagetext=event.target.nextElementSibling.innerText
   console.log(imagetext)
   for(brand in mobileCompanies){
