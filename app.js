@@ -480,7 +480,30 @@ var mobileCompanies = {
     for(brands in mobileCompanies){
       branddiv.innerHTML+=`
         <option value="${brands}">${brands}</option>
-        `}
+        `};
+
+    for (brands in mobileCompanies) {
+          for (keys in mobileCompanies[brands]) {
+            document.getElementById("card-sec").innerHTML += `
+          <div class="col-12 col-md-4" onclick="divcall()">
+            <div class="d-flex justify-content-center">
+              <div class="card py-2" style="width: 18rem;" id="mobile">
+                <img onclick="imagetodiv()" src="${mobileCompanies[brands][keys].image}"
+                  class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h4>${mobileCompanies[brands][keys].model}</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            `;
+          }
+    }
+        
+
+
+
 
  function brandchosen(){
   brandselection= event.target.value;
@@ -501,7 +524,6 @@ var mobileCompanies = {
  }
 
 var maindiv1 =document.getElementById('main-div')
-var footerdiv= document.getElementById('footer-div')
 function submit(){
 window.location.href="#"
 var mydate= new Date().toUTCString()
@@ -536,12 +558,6 @@ var mydate= new Date().toUTCString()
  }
 }
 }
-
-
-
-
-
-
 
 
 var newvalue
