@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid header">
+   
+    <div class="row g-3 g-md-5 py-2 nav">
+      <div class="col-12 col-md-3 d-flex justify-content-center">
+        <div>
+        <img style="width: 300px; height: 80px;" src="1732711767342.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-12 col-md-3 mt-5 d-flex flex-column flex-md-row gap-2 align-items-center justify-content-center">
+        <label class="mt-1" for="brand">BRAND</label>
+        <select class="form-select" onchange="brandchosen()" name="" id="brand">
+          <option disabled selected value="">Select the Brand</option>
+        </select>
+      </div>
+      <div class="col-12 col-md-3 gap-2 d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <label class="mt-1" for="model">MODEL</label>
+        <select class="form-select" onchange="chosenmodel()" name="" id="model">
+          <option disabled selected value="">Select the Model</option>
+        </select>
+      </div>
+      <div class="col-12 col-md-3 d-flex flex-column align-items-center flex-lg-row justify-content-center gap-2 justify-content-md-start">
+
+        <button class="btn btn-success" onclick="submit()">submit</button>
+        <button class="btn text-nowrap" onclick="submit()" style="background-color: rgb(255, 141, 65); color: white;">Become our member</button>
+
+      </div>
+
+    </div>
+  </div>
+  
+  
+
+
+  <div class="mt-3 container">
+    <div>
+      <div id="main-div">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center">
+            <video muted autoplay src="Y_20241127_165323_0001.mp4"></video>
+           </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center">
+            <video loop muted autoplay style="width: 100%" src="PAKISTAN NO.1_20241127_173253_0001.mp4"></video>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="app.js"></script>
+  <script src="bundle.js"></script>
+  <script src="popper.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
