@@ -487,7 +487,7 @@ var mobileCompanies = {
             document.getElementById("card-sec").innerHTML += `
           <div class="col-12 col-md-4" onclick="divcall()">
             <div class="d-flex justify-content-center">
-              <div class="card py-2" style="width: 18rem;" id="mobile">
+              <div class="card py-2" style="width: 18rem; height:400px; background:transparent !important; " id="mobile">
                 <img onclick="imagetodiv()" src="${mobileCompanies[brands][keys].image}"
                   class="card-img-top" alt="...">
                 <div class="card-body text-center">
@@ -613,7 +613,7 @@ function imagetodiv(){
         maindiv1.innerHTML=`<div class="h-100 card-div w-100 d-flex d-flex flex-column align-items-center justify-content-center" 
         style="margin: 15% 0 !important">
           <div class="h-100 w-100 d-flex flex-column flex-md-row gap-4 gap-md-0 justify-content-around align-items-center">
-            <img class="image-fluid" src="${mobileCompanies[brand][keys].image}" alt="">
+            <img style="width=300px" src="${mobileCompanies[brand][keys].image}" alt="">
             <div class="d-flex flex-column justify-content-center align-items-center gap-3">
               <h1>${mobileCompanies[brand][keys].model}</h1>
               <div class="ms-2">

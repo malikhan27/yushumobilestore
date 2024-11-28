@@ -1,24 +1,30 @@
 body, html {
+  background-image: linear-gradient(to left top, #fff1de, #ffe4d8, #f1d5f7, #fad8ea, #ffe0c2, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
   width: 100%;
   height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav {
-  color: rgb(255, 124, 48);
+  color: rgb(255, 125, 50);
 }
 .nav label {
   font-weight: 700;
 }
 .nav select {
-  border: 1px solid rgb(3, 100, 3) !important;
+  border: 1px solid rgb(5, 51, 5) !important;
 }
 
+.card-div img {
+  width: 500px !important;
+}
 .card-div h1, .card-div h5 {
-  color: rgb(255, 124, 48);
+  color: rgb(255, 125, 50);
 }
 .card-div p {
   font-weight: 700;
-  color: rgb(3, 100, 3);
+  color: rgb(5, 51, 5);
   margin-left: 10px;
 }
 .card-div a {
@@ -27,20 +33,18 @@ body, html {
 }
 
 .text-div {
-  background: rgb(248, 169, 100);
-  background: linear-gradient(62deg, rgb(255, 183, 119) 5%, rgba(1, 136, 1, 0.5) 48%, rgb(253, 188, 131) 99%);
-  border-radius: 8px;
+  background-image: linear-gradient(to left top, #ffdbac, #ffd3bf, #f5c5ff, #ffcde8, #f8caca, #eaedff, #d7f6ff, #d2fbff, #9cf3d6, #ffffff, #cbf7f8, #c4fae1);
 }
 .text-div h1 {
-  color: rgb(3, 100, 3) !important;
+  color: rgb(5, 51, 5) !important;
   text-shadow: 2px 2px 2px black !important;
 }
 .text-div span {
-  color: rgb(255, 124, 48) !important;
+  color: rgb(255, 125, 50) !important;
 }
 
 .card {
-  border: 1px solid rgb(3, 100, 3) !important;
+  border: 1px solid rgb(5, 51, 5) !important;
 }
 .card img {
   cursor: pointer !important;
@@ -48,8 +52,8 @@ body, html {
 
 .footer {
   padding: 50px 0;
-  background-color: rgb(164, 252, 164);
-  color: rgb(255, 124, 48);
+  background-color: rgb(255, 125, 50);
+  color: white;
 }
 .footer h2 {
   font-family: header-font;
@@ -90,15 +94,15 @@ body, html {
 
 @media screen and (max-width: 500px) {
   .card-div img {
-    width: 250px;
-    height: 300px;
+    width: 250px !important;
+    height: 300px !important;
   }
   .card-div h1, .card-div h5 {
-    color: rgb(255, 124, 48);
+    color: rgb(255, 125, 50);
   }
   .card-div p {
     font-weight: 700;
-    color: rgb(3, 100, 3);
+    color: rgb(5, 51, 5);
     margin-left: 10px;
   }
   .card-div a {
