@@ -1,5 +1,5 @@
-var brandselection;
-var selectedmodel
+var brandselection="";
+var selectedmodel=""
 var branddiv=  document.getElementById("brand")
 var modeldiv=document.getElementById("model")
 
@@ -487,7 +487,7 @@ var mobileCompanies = {
             document.getElementById("card-sec").innerHTML += `
           <div class="col-12 col-md-4" onclick="divcall()">
             <div class="d-flex justify-content-center">
-              <div class="card py-2" style="width: 18rem; height:400px; background:transparent !important; " id="mobile">
+              <div class="card" style="width: 18rem; height:400px; background:transparent !important; " id="mobile">
                 <img onclick="imagetodiv()" src="${mobileCompanies[brands][keys].image}"
                   class="card-img-top" alt="...">
                 <div class="card-body text-center">
@@ -523,10 +523,12 @@ var mobileCompanies = {
   console.log(selectedmodel)
  }
 
-var maindiv1 =document.getElementById('main-div')
+var maindiv1 = document.getElementById('main-div')
 function submit(){
 window.location.href="#"
 var mydate= new Date().toUTCString()
+ if(brandselection!==""){
+  if(selectedmodel!==""){
  for(keys in mobileCompanies[brandselection]){
   if(mobileCompanies[brandselection][keys].model===selectedmodel){
     maindiv1.innerHTML=`<div class="h-100 card-div w-100 d-flex d-flex flex-column align-items-center justify-content-center" 
@@ -553,9 +555,24 @@ var mydate= new Date().toUTCString()
         </div>
       </div>
     </div>
-`
-
+`}
+}
+}else{
+  Swal.fire({
+    icon: "error",
+    title: "ERROR",
+    text: "Select the Model Please!",
+    footer: '<a href="#">Why do I have this issue?</a>'
+  });
+}
  }
+else{
+  Swal.fire({
+    icon: "error",
+    title: "ERROR",
+    text: "Select the Brand and Model Please!",
+    footer: '<a href="#">Why do I have this issue?</a>'
+  });
 }
 }
 
@@ -634,14 +651,57 @@ function imagetodiv(){
             </div>
           </div>
         </div>
-    `
-    
-          
-          
-        
-      }
+    `}
     }
   
 }
 
+}
+
+
+var username = document.getElementById ('name');
+var userfathername = document.getElementById ('father-name');
+var email = document.getElementById ('email');
+var number = document.getElementById ('number');
+
+
+function formsubmit(){
+
+  if (username.value.trim () !== '') {
+    if (userfathername.value.trim () !== '') {
+      if (email.value.trim () !== '') {
+        if (number.value !== '' && number.value.length >= 11){
+
+        }else{
+          Swal.fire({
+            icon: "error",
+            title: "ERROR",
+            text: "fill the number field properly!",
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
+        }
+} else{ Swal.fire({
+  icon: "error",
+  title: "ERROR",
+  text: "fill the email field!",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
+
+}
+} else{ Swal.fire({
+  icon: "error",
+  title: "ERROR",
+  text: "Enter your Father name!",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
+
+}
+}else{
+  Swal.fire({
+    icon: "error",
+    title: "ERROR",
+    text: "Enter your name please!",
+    footer: '<a href="#">Why do I have this issue?</a>'
+  });
+}
 }
