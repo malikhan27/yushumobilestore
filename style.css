@@ -95,7 +95,7 @@ body, html {
 @media screen and (max-width: 500px) {
   .card-div img {
     width: 250px !important;
-    height: 300px !important;
+    height: 250px !important;
   }
   .card-div h1, .card-div h5 {
     color: rgb(255, 125, 50);
@@ -110,7 +110,7 @@ body, html {
     color: white;
   }
   video {
-    width: 300px !important;
-    height: 150px !important;
+    width: 320px !important;
+    height: 200px !important;
   }
 }/*# sourceMappingURL=style.css.map */
